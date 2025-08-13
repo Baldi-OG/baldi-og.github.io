@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 nav a {
@@ -26,4 +27,47 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+#container {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme {
+    color: white;
+    width: 300px;
+    border: white solid 2px;
+    padding: 30px;
+    border-radius: 25px;
+    margin-right: 80px;
+    font-size: 1.2em;
+}
+
+img {
+    animation: rotate infinite 1.5s linear;
+    border-radius: 50%;
+}
+
+img:hover {
+    animation: none;
+}
+
+#pink {
+    height: 400px;
+    width: 100%;
+    background: rgb(255, 136, 156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
